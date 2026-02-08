@@ -8,13 +8,13 @@
 
         // Ownership
         public int CreatorId { get; set; }
-        public User Creator { get; set; } = new User();
+        public User ? Creator { get; set; } 
 
         //tasks
-        public ICollection<TaskItem> TaskItems { get; set; } = new List<TaskItem>();
+        public ICollection<TaskItem> ? TaskItems { get; set; } 
 
         // ProjectMember Relation
-        public ICollection<ProjectMember> ProjectMembers { get; set; } = new List<ProjectMember>();
+        public ICollection<ProjectMember> ? ProjectMembers { get; set; } 
 
     }
 }

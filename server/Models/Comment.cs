@@ -9,11 +9,11 @@
 
         // Task Relationship
         public int TaskId { get; set; }
-        public TaskItem TaskItem { get; set; } = new TaskItem();
+        public TaskItem ? TaskItem { get; set; } 
 
         //user relationship
         public int UserId { get; set; }
-        public User User { get; set; } = new User();
+        public User ? User { get; set; } 
 
     }
 }
