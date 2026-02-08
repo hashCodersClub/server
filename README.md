@@ -8,3 +8,7 @@
 3.  Data Folder
 4.  DbContext File/Class
 5.  AppDbContext class registered in Program.cs
+6.  Roles
+7.  UserRoles
+8.  FluentApi configuration
+9.  Migration commands
