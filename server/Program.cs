@@ -1,5 +1,6 @@
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
 using server.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +30,7 @@ using (var scope = app.Services.CreateScope())
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference("/scalar");
 }
 
 app.UseHttpsRedirection();
